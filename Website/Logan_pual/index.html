@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CryptoZoo Saga: A Cautionary Tale in the NFT World</title>
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --clr-neon: hsl(320, 100%, 50%); /* Adjusted neon color */
+    --clr-bg: #222; /* Dark black-grey color */
+    --clr-light: #fff; /* Light color for text */
+  }
+
+  body {
+    font-family: 'Balsamiq Sans', sans-serif;
+    line-height: 1.6;
+    background-color: var(--clr-bg); /* Use variable for background color */
+    margin: 0;
+    padding: 0;
+    color: var(--clr-light); /* Set text color to white */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333; /* Darker shade of black-grey for container background */
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflowing content */
+  }
+
+  .glow-effect {
+    position: relative;
+  }
+
+  .glow-effect::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    animation: neon-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes neon-glow {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+    }
+  }
+
+  footer {
+    background-color: var(--clr-bg); /* Dark black-grey for footer background */
+    border: 5px solid var(--clr-neon); /* Neon border */
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Added styles for the comment container */
+  .container-secondary {
+    background-color: #222; /* Dark black-grey for container background */
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden; /* Hide overflowing content */
+  }
+
+  .comment-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--clr-neon);
+    margin-bottom: 10px;
+  }
+
+  .comment-body {
+    color: #ddd;
+  }
+
+  .comment-body p {
+    margin: 10px 0;
+  }
+
+  /* Added styles for comment form */
+  .comment-form {
+    margin-top: 20px;
+  }
+
+  .comment-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-bottom: 10px;
+    color: var(--clr-light);
+    background-color: #444;
+  }
+
+  .comment-form input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    color: var(--clr-light);
+    background-color: #444;
+  }
+
+  .comment-form input[type="file"] {
+    margin-top: 10px;
+  }
+
+  .comment-form input[type="submit"] {
+    background-color: var(--clr-neon);
+    color: var(--clr-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .comment-form input[type="submit"]:hover {
+    background-color: hsl(320, 100%, 40%);
+  }
+
+  /* Added styles for comments */
+  .comments {
+    margin-top: 20px;
+  }
+
+  .comment {
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .comment p {
+    margin: 5px 0;
+  }
+
+  /* Improved styling for embedded video */
+  .embedded-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .embedded-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the width to 100% for responsiveness */
+    height: 100%; /* Set the height to 100% for responsiveness */
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image-container">
+    <img src="Untitled.png" alt="Image Description">
+  </div>
+
+  <div>
+    <h1>CryptoZoo Saga: A Cautionary Tale in the NFT World</h1>
+
+    <!-- Your article content here -->
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/386p68_lDHA?si=Cu8gHV84tNR9quxl" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="quote">
+      <p>"Transparency, accountability, and due diligence are crucial in evaluating cryptocurrency projects." - Crypto Analyst</p>
+    </div>
+  </div>
+  <div class="glow-effect"></div> <!-- Added div for glowing effect -->
+</div>
+
+<!-- Second container styled like a comment -->
+<div class="container-secondary">
+  <div class="comment-header">Leave a Comment:</div>
+  <div class="comment-body">
+    <form class="comment-form" id="comment-form" action="#" method="post" enctype="multipart/form-data">
+      <textarea name="comment" id="comment" placeholder="Write your comment here"></textarea>
+      <br>
+      <input type="text" name="youtube-link" id="youtube-link" placeholder="Enter YouTube link">
+      <br>
+      <input type="file" name="video" id="video" accept="video/*">
+      <br>
+      <input type="file" name="image" id="image" accept="image/*">
+      <br>
+      <input type="submit" value="Submit Comment">
+    </form>
+
+    <!-- Display area for comments -->
+    <div class="comments" id="comments">
+      <!-- Sample comment -->
+      <div class="comment">
+        <p><strong>John Doe</strong></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget justo sed felis tempor eleifend. Ut at velit vitae justo laoreet scelerisque.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 CryptoZoo Saga. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for handling comment submission -->
+<script>
+  document.getElementById("comment-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Get the value of the comment
+    var comment = document.getElementById("comment").value;
+
+    // Check if the comment contains a YouTube link
+    var youtubeLink = document.getElementById("youtube-link").value;
+    if (youtubeLink) {
+      // Extract the YouTube video ID
+      var videoId = youtubeLink.split('v=')[1];
+      var ampersandPosition = videoId.indexOf('&');
+      if(ampersandPosition !== -1) {
+        videoId = videoId.substring(0, ampersandPosition);
+      }
+
+      // Generate embedded YouTube video player
+      var youtubeEmbed = '<div class="embedded-video"><iframe width="320" height="180" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe></div>';
+      
+      // Create a new comment element with the embedded video
+      var newComment = document.createElement("div");
+      newComment.classList.add("comment");
+      newComment.innerHTML = "<p><strong>User</strong></p><p>" + comment + "</p>" + youtubeEmbed;
+
+      // Append the new comment to the comments section
+      document.getElementById("comments").appendChild(newComment);
+    } else {
+      // Create a new comment element without the embedded video
+      var newComment = document.createElement("div");
+      newComment.classList.add("comment");
+      newComment.innerHTML = "<p><strong>User</strong></p><p>" + comment + "</p>";
+
+      // Append the new comment to the comments section
+      document.getElementById("comments").appendChild(newComment);
+    }
+
+    // Reset the comment form
+    document.getElementById("comment-form").reset();
+  });
+</script>
+
+</body>
+</html>
